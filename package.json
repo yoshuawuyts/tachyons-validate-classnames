@@ -1,0 +1,29 @@
+{
+  "name": "tachyons-validate-class",
+  "version": "1.0.0",
+  "description": "Validate if a CSS class name is a valid for Tachyons",
+  "main": "index.js",
+  "scripts": {
+    "deps": "dependency-check . && dependency-check . --extra --no-dev",
+    "test": "standard && npm run deps && NODE_ENV=test node test",
+    "test:cov": "standard && npm run deps && NODE_ENV=test istanbul cover test.js"
+  },
+  "repository": "yoshuawuyts/tachyons-validate-class",
+  "keywords": [
+    "tachyons",
+    "validate",
+    "lint"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "css": "^2.2.1",
+    "resolve": "^1.1.7",
+    "tachyons": "^4.1.2"
+  },
+  "devDependencies": {
+    "dependency-check": "^2.6.0",
+    "istanbul": "^0.4.5",
+    "standard": "^8.0.0",
+    "tape": "^4.6.0"
+  }
+}
