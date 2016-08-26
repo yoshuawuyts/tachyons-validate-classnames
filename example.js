@@ -1,4 +1,4 @@
 const val = require('./')
 
-console.log(val('.foo'))
-console.log(val('.black'))
+console.log(val('.foo { color: blue }'))
+console.log(val('.black { color: white }'))

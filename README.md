@@ -2,17 +2,23 @@
 [![npm version][2]][3] [![build status][4]][5] [![test coverage][6]][7]
 [![downloads][8]][9] [![js-standard-style][10]][11]
 
-Validate if a CSS class name is a valid for Tachyons.
+Validate if a CSS class name is valid for Tachyons. Useful to validate
+Tachyons overrides are valid.
 
 ## Usage
 ```js
-const tachyonsValidateClass = require('tachyons-validate-class')
+const validate = require('tachyons-validate-class')
 
-tachyonsValidateClass()
+validate('.black { color: white }')
+// => { selectors: ['.black'], failed: [] }
+
+validate('.foo { color: white }')
+// => { selectors: ['.foo'], failed: ['.foo'] }
 ```
 
 ## API
-### tachyonsValidateClass
+### validate(css)
+Validate a string of CSS. Returns all selectors and all failed selectors.
 
 ## Installation
 ```sh
