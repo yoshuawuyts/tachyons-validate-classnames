@@ -7,7 +7,7 @@ Tachyons overrides are valid.
 
 ## Usage
 ```js
-const validate = require('tachyons-validate-class')
+const validate = require('tachyons-validate-classnames')
 
 validate('.black { color: white }')
 // => { selectors: ['.black'], failed: [] }
@@ -38,7 +38,7 @@ Validate a string of CSS. Returns all selectors and all failed selectors.
 
 ## Installation
 ```sh
-$ npm install tachyons-validate-class
+$ npm install tachyons-validate-classnames
 ```
 
 ## License
