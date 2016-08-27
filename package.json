@@ -1,6 +1,6 @@
 {
   "name": "tachyons-validate-classnames",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Validate if a string of CSS to see if it contains valid Tachyons classnames",
   "main": "index.js",
   "scripts": {
