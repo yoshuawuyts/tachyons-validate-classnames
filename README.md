@@ -27,10 +27,10 @@ Options:
 Examples:
   $ tachyons-validate-classnames ./bundle.css  # Validate a file
   $ curl foobar.com/bundle.css | tachyons-validate-classnames  # Validate stdin
-```
 
 Docs: https://github.com/yoshuawuyts/tachyons-validate-class
 Bugs: https://github.com/yoshuawuyts/tachyons-validate-class/issues
+```
 
 ## API
 ### validate(css)
